@@ -13,19 +13,65 @@
 </head>
 <body>
     <ul>
-        <li><a href="">GIỚI THIỆU</a></li>
-        <li><a href="">KINH DOANH</a></li>
-        <li><a href="">CHO THUÊ</a></li>
-        <li><a href="">DỊCH VỤ</a></li>
-        <li><a href="">LIÊN HỆ</a></li>  
+        <li>
+            <div class="dropdown">
+                <a href="" style="color: black;" class="dropbtn">GIỚI THIỆU</a>
+                <div class="dropdown-content">
+                  <a href="">Link 1</a>
+                  <a href="">Link 2</a>
+                  <a href="">Link 3</a>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="dropdown">
+                <a href="" style="color: black;" class="dropbtn">KINH DOANH</a>
+                <div class="dropdown-content">
+                  <a href="">Link 1</a>
+                  <a href="">Link 2</a>
+                  <a href="">Link 3</a>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="dropdown">
+                <a href="" style="color: black;" class="dropbtn">CHO THUÊ</a>
+                <div class="dropdown-content">
+                  <a href="">Link 1</a>
+                  <a href="">Link 2</a>
+                  <a href="">Link 3</a>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="dropdown">
+                <a href="" style="color: black;" class="dropbtn">DỊCH VỤ</a>
+                <div class="dropdown-content">
+                  <a href="">Link 1</a>
+                  <a href="">Link 2</a>
+                  <a href="">Link 3</a>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="dropdown">
+                <a href="" style="color: black;" class="dropbtn">LIÊN HỆ</a>
+                <div class="dropdown-content">
+                  <a href="">Link 1</a>
+                  <a href="">Link 2</a>
+                  <a href="">Link 3</a>
+                </div>
+            </div>
+        </li> 
     </ul> 
 
     <header><img src="Logo.webp" style="background-color:darkslategrey;" alt=""></header>
-    <br><br> <hr>
+    <br><br> 
     <h2 style="color: rgb(41, 41, 41); font-family: montserrat; font-size: 28px; letter-spacing: 0.3em">VỀ CHÚNG TÔI</h2>
+    <br><br>
     
-     
-    <div class="container">         <!--INTRO-->
+    <!-------------------------------------INTRO------------------------------------------------>
+    <div class="container">        
         <div class="row" style="height: 500px;" >            
             <div class="col-sm-6" style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
                 Dream Yacht Vietnam cung cấp dịch vụ cho thuê du thuyền tại TP. Hồ Chí Minh, Nha Trang, Phú Quốc. Chúng tôi mong muốn mang đến cho khách hàng những trải nghiệm hoàn toàn mới với đội ngũ và phong cách phục vụ chuyên nghiệp. Bên cạnh đó, Dream Yacht còn tổ chức các tour du lịch du thuyền ở Thái Lan và các điểm đến du thuyền nổi tiếng ở Châu Âu.                
@@ -37,11 +83,15 @@
             <div class="col-sm-6"><img src="logo2.webp" alt="" height="300px" width="550px" ></div>
         </div>
     </div>
+    
+    <hr style="border: solid; width: 1250px;"> 
 
-    <div class="container">
+    <!------------------------------------CATEGORY----------------------------------------------> 
+
+    <div class="container">          
         <div class="row" style="height: 250px;" >            
             <div class="col-sm-4">          <!--dt1-->  
-                <img src="pic1.webp" alt="" usemap="#mymap1" height="250px" width="350px" >
+                <img class="pic1" src="pic1.webp"  alt="" usemap="#mymap1" height="250px" width="350px" >
                     <map name="mymap1">
                         <area shape="rect" coords="0,0,400,400" href="dt1.html"  alt="">
                     </map>
@@ -63,13 +113,33 @@
                 <p style="font-family: cursive;">Princess 62 Flybridge</p>
                 Nội thất đậm mùi vải, gỗ, da mới, đây là một chiếc du thuyền to và đẹp nhất bạn có thể thuê được ở thời điểm hiện tại.
             </div>
-
-
         </div>
     </div>
 
+    <!-------------------------------------PRICE------------------------------------------------>
+    <div class="container">                 
+        <div class="row" style="height: 90px;">    
+            <div class="col-sm-6">           
+                5.970.000 &#8363; / Giờ (Weekday) <br>
+                7.164.000 &#8363; / Giờ (Weekend) <br>
+                &#8987; Giờ Khởi hành: Sông Sài Gòn  <br>
+                &#128197; Thời gian: 18h30 - 21h15
+                
+            </div>
+            
+            <div class="col-sm-6">          
+                16.560.000 &#8363; / Giờ (Weekday) <br>
+                18.000.000 &#8363; / Giờ (Weekend) <br>
+                &#8987; Giờ Khởi hành: Sông Sài Gòn  <br>
+                &#128197; Thời gian: 21h15 - 00h30
+            </div>
+        </div>
+    </div>
+
+    <br> <br> 
+
     <div class="container">
-        <div class="row" style="height: 400px;" >               
+        <div class="row" style="height: 250px;" >               
             <div class="col-sm-4">          <!--dt3-->  
                 <img src="pic3.webp" alt="" usemap="#mymap3" height="250px" width="350px" >
                     <map name="mymap3">
@@ -78,7 +148,7 @@
             </div>
 
             <div class="col-sm-2" style="height: 400px;">
-                <p style="font-family: cursive;">Princess 62 Flybridge</p>
+                <p style="font-family: cursive;">Lagoon 450F Sarita</p>
                 Nội thất đậm mùi vải, gỗ, da mới, đây là một chiếc du thuyền to và đẹp nhất bạn có thể thuê được ở thời điểm hiện tại.
             </div>
 
@@ -90,18 +160,36 @@
             </div>
 
             <div class="col-sm-2" style="height: 400px;">
-                <p style="font-family: cursive;">Princess 62 Flybridge</p>
+                <p style="font-family: cursive;">Lagoon 630 Catamaran</p>
                 Nội thất đậm mùi vải, gỗ, da mới, đây là một chiếc du thuyền to và đẹp nhất bạn có thể thuê được ở thời điểm hiện tại.
             </div>
-
         </div>
     </div>
 
+     <!-------------------------------------PRICE------------------------------------------------>
+    <div class="container">                 
+        <div class="row" style="height: 90px;">    
+            <div class="col-sm-6">          
+                5.970.000 &#8363; / Giờ (Weekday) <br>
+                7.164.000 &#8363; / Giờ (Weekend) <br>
+                &#8987; Giờ Khởi hành: Sông Sài Gòn  <br>
+                &#128197; Thời gian: 18h30 - 21h15
+                
+            </div>
+            
+            <div class="col-sm-6">         
+                16.560.000 &#8363; / Giờ (Weekday) <br>
+                18.000.000 &#8363; / Giờ (Weekend) <br>
+                &#8987; Giờ Khởi hành: Sông Sài Gòn  <br>
+                &#128197; Thời gian: 21h15 - 00h30
+            </div>
+        </div>
+    </div>
 
     
 
 
-
+<br><br><br><br> <br> <br><br><br>
 
 
 

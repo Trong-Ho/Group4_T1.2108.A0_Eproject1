@@ -1,32 +1,16 @@
-li a
-{
-    text-decoration: none;
-}
-
 ul
 {
     list-style-type: none;
     overflow: hidden;
 }
 
-nav ul li
-{
-    list-style-type: none;
-    display: inline-block;
-
-}
-
 li
 {
     float: left;
     padding: 30px 30px;
-    /*Top right bot left*/
-    margin: 50px 50px;
-}
+    /*Top right bot left  */
+    margin: 25px 30px 150px 30px;
 
-li:hover
-{
-    background-color: aquamarine;
 }
 
 header
@@ -39,6 +23,41 @@ h2
     margin-left: 10%;
     margin-right: 50%;
 }
+
+.dropbtn 
+{
+    padding: 26px;
+    font-size: 16px;
+    border: none;
+    background-color: none;
+}
+  
+.dropdown 
+{
+    position: relative;
+    display: inline-block;
+}
+  
+.dropdown-content 
+{
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+  
+.dropdown-content a 
+{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+  
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  .dropdown:hover .dropdown-content {display: block;}
+  
 
 
 

@@ -36,10 +36,6 @@ img{
     color: #1ebba3
 }
 
-.carousel-inner img {
-    width: 100%;
-    height: 100%;
-}
 
 nav ul li {
     padding-left: 15px;
@@ -70,20 +66,6 @@ nav ul li {
     border-radius: 5px;
 }
 
-.uhome-bar h5 a{
-    text-decoration: none;
-    list-style: none;
-    color: #1ebba3;
-}
-
-.uhome-bar h5:hover{
-    background-color: aqua;
-}
-
-h5{
-    padding: 10px 60px;
-
-}
 
 .hotline-phone-ring-circle{width:85px;height:85px;top:10px;left:10px;position:absolute;background-color:transparent;border-radius:100%;border:2px solid #e60808;-webkit-animation:phonering-alo-circle-anim 1.2s infinite ease-in-out;animation:phonering-alo-circle-anim 1.2s infinite ease-in-out;transition:all .5s;-webkit-transform-origin:50% 50%;-ms-transform-origin:50% 50%;transform-origin:50% 50%;opacity:.5}
 .hotline-phone-ring-circle-fill{width:55px;height:55px;top:22px;left:26px;position:absolute;background-color:rgba(230,8,8,.7);border-radius:100%;border:2px solid transparent;-webkit-animation:phonering-alo-circle-fill-anim 2.3s infinite ease-in-out;animation:phonering-alo-circle-fill-anim 2.3s infinite ease-in-out;transition:all .5s;-webkit-transform-origin:50% 50%;-ms-transform-origin:50% 50%;transform-origin:50% 50%}

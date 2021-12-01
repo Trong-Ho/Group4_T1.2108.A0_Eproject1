@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <style>
+    
+   .carousel-inner img {
+    width: 100%;
+    height: 100%;
+  }
+   .card-text{
+    color: red;
+  }
+   .card-title{
+    color:#044c7f;
+  }
+  .carousel-inner img {
+    width: 100%;
+    height: 100%;
+  }
+</style>
+</head>
+<body background="back1.jpg">
+
+    <!--carousel-->
+    <h1 class="display-5" style="text-align: center;">TOP 5 BOAT</h1>
+    <div class="container">
+
+        <div id="demo" class="carousel slide" data-ride="carousel" style="width: 700px;margin: auto;border: solid rgb(107, 107, 107);">
+            <ul class="carousel-indicators">
+              <li data-target="#demo" data-slide-to="0" class="active"></li>
+              <li data-target="#demo" data-slide-to="1"></li>
+              <li data-target="#demo" data-slide-to="2"></li>
+              <li data-target="#demo" data-slide-to="3"></li>
+              <li data-target="#demo" data-slide-to="4"></li>
+            </ul>
+            <div class="carousel-inner">
+    
+              <div class="carousel-item active">
+                <img src="carou1.jpg" alt="Boatimage" width="1100" height="500">
+                <div class="carousel-caption">
+                  <h1 class="display-4">Eclipse</h1>
+                </div>   
+              </div>
+    
+              <div class="carousel-item">
+                <img src="carou2.jpg" alt="Boatimage" width="1100" height="500">
+                <div class="carousel-caption">
+                  <h1 class="display-4">Maltese Falcom</h1>
+                </div>   
+              </div>
+    
+              <div class="carousel-item">
+                <img src="carou3.jpg" alt="Boatimage" width="1100" height="500">
+                <div class="carousel-caption">
+                  <h1 class="display-4">Azzam</h1>
+                </div>   
+              </div>
+    
+              <div class="carousel-item">
+                <img src="carou4.jpg" alt="Boatimage" width="1100" height="500">
+                <div class="carousel-caption">
+                  <h1 class="display-4">Sailing Yacht A</h1>
+                </div>   
+              </div>
+    
+              <div class="carousel-item">
+                <img src="carou5.jpg" alt="Boatimage" width="1100" height="500">
+                <div class="carousel-caption">
+                  <h1 class="display-4">Margaret</h1>
+                </div>   
+              </div>
+    
+            </div>
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </a>
+
+          </div>
+
+    </div>
+         
+    <!--End carousel-->
+
+<div class="container-fluid">
+
+    <!-- Nav tabs -->
+    <ul class="nav nav-pills">
+        <li class="nav-item m-sm-4">
+              <a class="nav-link active" data-toggle="pill" href="#lux">Luxury</a>
+        </li>
+        <li class="nav-item m-sm-4">
+              <a class="nav-link" data-toggle="pill" href="#sail">Sailing</a>
+        </li>
+        <li class="nav-item m-sm-4">
+              <a class="nav-link" data-toggle="pill" href="#fish">Fishing</a>
+        </li>
+    </ul>
+    <!-- End Nav tabs -->
+
+    
+    <!--Search and cart-->
+     <form class="form-inline" style="margin-bottom:20px ;margin-left: 1100px;" action="">
+        <div class="input-group">
+                 <input type="text" class="form-control-md" placeholder="Search...">
+             <div class="input-group-append">
+                 <button class="btn btn-outline-warning ml-1"><i class="bi bi-search"></i></button>
+             </div>
+        </div>
+                 <a href="giohang.html"><h1 class="dispay-1 ml-sm-5"><i class="bi bi-cart-check-fill" style="color: orange;"></i></h1></a>  
+     </form>
+    <!--end Search and cart-->
+
+    <!--tab content-->
+
+     <div class="tab-content">
+          <!--card LUX--> 
+        <div id="lux" class="container-fluid tab-pane active"><br>
+              
+            <div class="row">
+                <!--Line 1-->
+                <div class="col-sm-3">
+                    <div class="card" style="width:300px;">
+                             <a href="#"><img class="card-img-top" src="lux1.jpg" alt="Card image" style="width: 100%;height: 190px;border: 3px white solid;"></a>  
+                        <div class="card-body">
+                             <h4 class="card-title">Supperyacht A</h4>
+                             <p class="card-text">2.000 $</p>
+                             <a href="#" class="btn btn-info">View Infomation</a> <a href="#" class="btn btn-info ">Download</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-3">
+                    <div class="card" style="width:300px">
+                            <a href="#"><img class="card-img-top" src="lux2.jpg" alt="Card image" style="width: 100%;height: 190px;border: 3px white solid;"></a> 
+                        <div class="card-body">
+                            <h4 class="card-title">Scarlet Pearl</h4>
+                            <p class="card-text">2.500 $</p>
+                            <a href="#" class="btn btn-info">View Infomation</a> <a href="#" class="btn btn-info">Download</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-3">
+                    <div class="card" style="width:300px">
+                            <a href="#"><img class="card-img-top" src="lux3.jpeg" alt="Card image" style="width: 100%;height: 190px;border: 3px white solid;"></a> 
+                        <div class="card-body">
+                            <h4 class="card-title">Panakeia</h4>
+                            <p class="card-text">2.500 $</p>
+                            <a href="#" class="btn btn-info">View Infomation</a> <a href="#" class="btn btn-info ">Download</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-3">
+                    <div class="card" style="width:300px;">
+                             <a href="#"><img class="card-img-top" src="lux4.webp" alt="Card image" style="width: 100%;height: 190px;border: 3px white solid;"></a>  
+                          <div class="card-body">
+                             <h4 class="card-title">Octopus</h4>
+                             <p class="card-text">3.500 $</p>
+                             <a href="#" class="btn btn-info">View Infomation</a> <a href="#" class="btn btn-info ">Download</a>
+                          </div>
+                    </div>
+                </div>
+
+            </div>    
+               <!--end Line 1-->
+                <!--Line 2-->
+
+                    <div class="row mt-sm-3">
+                         
+                        <div class="col-sm-3">
+                            <div class="card" style="width:300px">
+                                    <a href="#"><img class="card-img-top" src="lux5.jpg" alt="Card image" style="width: 100%;height: 190px;border: 3px white solid;"></a> 
+                                <div class="card-body">
+                                    <h4 class="card-title"> Eclipse </h4>
+                                    <p class="card-text"> 3.500 $ </p>
+                                    <a href="#" class="btn btn-info">View Infomation</a> <a href="#" class="btn btn-info">Download</a>
+                               </div>
+                            </div>
+                        </div>
+
+                       <div class="col-sm-3">
+                            <div class="card" style="width:300px">
+                                      <a href="#"><img class="card-img-top" src="lux6.webp" alt="Card image" style="width: 100%;height: 190px;border: 3px white solid;"></a> 
+                                 <div class="card-body">
+                                      <h4 class="card-title">Nord</h4>
+                                      <p class="card-text">3.000 $</p>
+                                      <a href="#" class="btn btn-info">View Infomation</a> <a href="#" class="btn btn-info ">Download</a>
+                                 </div>
+                            </div>
+                        </div>
+
+                       <div class="col-sm-3">
+                             <div class="card" style="width:300px">
+                                        <a href="#"><img class="card-img-top" src="lux7.jpg" alt="Card image" style="width: 100%;height: 190px;border: 3px white solid;"></a> 
+                                 <div class="card-body">
+                                        <h4 class="card-title">Azzam</h4>
+                                        <p class="card-text">4.000 $</p>
+                                        <a href="#" class="btn btn-info">View Infomation</a> <a href="#" class="btn btn-info ">Download</a>
+                                </div>
+                            </div>
+                       </div>
+
+                       <div class="col-sm-3">
+                        <div class="card" style="width:300px">
+                                 <a href="#"><img class="card-img-top" src="lux8.jpg" alt="Card image" style="width: 100%;height: 190px;border: 3px white solid;"></a> 
+                            <div class="card-body">
+                                 <h4 class="card-title">Margaret</h4>
+                                 <p class="card-text">1.600 $</p>
+                                 <a href="#" class="btn btn-info">View Infomation</a> <a href="#" class="btn btn-info ">Download</a>
+                            </div>
+                         </div>
+                    </div>
+
+                  </div>
+                <!--end Line 2-->
+
+        </div>
+         <!--END card LUX-->
+
+         <!--card SAIL-->
+         <div id="sail" class="container-fluid tab-pane fade"> <br>
+
+             <div class="row">
+
+                <div class="col-sm-3">
+                    <div class="card" style="width:300px">
+                             <a href="#"><img class="card-img-top" src="sail1.jpeg" alt="Card image" style="width: 100%;height: 190px;border: 3px white solid;"></a> 
+                        <div class="card-body">
+                             <h4 class="card-title">AIAXAIA</h4>
+                             <p class="card-text">2.600 $</p>
+                             <a href="#" class="btn btn-info">View Infomation</a> <a href="#" class="btn btn-info ">Download</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-3">
+                    <div class="card" style="width:300px">
+                            <a href="#"><img class="card-img-top" src="sail2.jpg" alt="Card image" style="width: 100%;height: 190px;border: 3px white solid;"></a> 
+                        <div class="card-body">
+                            <h4 class="card-title">Atlatic</h4>
+                            <p class="card-text">2.800 $ </p>
+                            <a href="#" class="btn btn-info">View Infomation</a> <a href="#" class="btn btn-info ">Download</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-3">
+                    <div class="card" style="width:300px">
+                            <a href="#"><img class="card-img-top" src="sail3.jpg" alt="Card image" style="width: 100%;height: 190px;border: 3px white solid;"></a> 
+                        <div class="card-body">
+                            <h4 class="card-title">Maltese Falcom</h4>
+                            <p class="card-text">3.500 $</p>
+                            <a href="#" class="btn btn-info">View Infomation</a> <a href="#" class="btn btn-info">Download</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-3">
+                    <div class="card" style="width:300px;">
+                           <a href="#"><img class="card-img-top" src="sail4.jpg" alt="Card image" style="width: 100%;height: 190px;border: 3px white solid;"></a>  
+                       <div class="card-body">
+                           <h4 class="card-title">Black Pearl</h4>
+                           <p class="card-text"> 3.000 $</p>
+                           <a href="#" class="btn btn-info">View Infomation</a> <a href="#" class="btn btn-info ">Download</a>
+                       </div>
+                    </div>
+                 </div>
+
+            </div>    
+
+            <div class="row mt-sm-3">
+                         
+                
+
+                <div class="col-sm-3">
+                    <div class="card" style="width:300px">
+                            <a href="#"><img class="card-img-top" src="sail5.jpg" alt="Card image" style="width: 100%;height: 190px;border: 3px white solid;"></a> 
+                         <div class="card-body">
+                            <h4 class="card-title">SignatureCruise Halong</h4>
+                            <p class="card-text">800 $</p>
+                            <a href="#" class="btn btn-info">View Infomation</a> <a href="#" class="btn btn-info">Download</a>
+                        </div>
+                     </div>
+                </div>
+
+                <div class="col-sm-3">
+                    <div class="card" style="width:300px">
+                            <a href="#"><img class="card-img-top" src="sail6.jpg" alt="Card image" style="width: 100%;height: 190px;border: 3px white solid;"></a> 
+                        <div class="card-body">
+                            <h4 class="card-title">Sailing Yacht A</h4>
+                            <p class="card-text">4.000 $</p>
+                            <a href="#" class="btn btn-info">View Infomation</a> <a href="#" class="btn btn-info ">Download</a>
+                        </div>
+                    </div>
+                </div>
+
+               <div class="col-sm-3">
+                   <div class="card" style="width:300px">
+                            <a href="#"><img class="card-img-top" src="sail7.jpg" alt="Card image" style="width: 100%;height: 190px;border: 3px white solid;"></a> 
+                        <div class="card-body">
+                           <h4 class="card-title">Golden Horizon</h4>
+                           <p class="card-text">3.000 $</p>
+                           <a href="#" class="btn btn-info">View Infomation</a> <a href="#" class="btn btn-info ">Download</a>
+                       </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-3">
+                    <div class="card" style="width:300px">
+                            <a href="#"><img class="card-img-top" src="sail8.jpg" alt="Card image" style="width: 100%;height: 190px;border: 3px white solid;"></a> 
+                        <div class="card-body">
+                            <h4 class="card-title">Paradise Luxury</h4>
+                            <p class="card-text">1.000 $</p>
+                            <a href="#" class="btn btn-info">View Infomation</a> <a href="#" class="btn btn-info">Download</a>
+                        </div>
+                    </div>
+                </div>
+
+            <!--END Line2-->
+            </div>
+
+         </div>
+         <!--END card SAIL-->
+
+         <!--Card Fish-->
+         <div id="fish" class="container-fluid tab-pane fade"> <br>
+            <!--Line1-->
+            <div class="row">
+
+                <div class="col-sm-3">
+                    <div class="card" style="width:300px">
+                             <a href="#"><img class="card-img-top" src="fish1.jfif" alt="Card image" style="width: 100%;height: 190px;border: 3px white solid;"></a> 
+                        <div class="card-body">
+                             <h4 class="card-title">Merry Fisher 795</h4>
+                             <p class="card-text">1.600 $</p>
+                             <a href="" class="btn btn-info">View Infomation</a> <a href="#" class="btn btn-info ">Download</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-3">
+                    <div class="card" style="width:300px">
+                            <a href="#"><img class="card-img-top" src="fish2.jfif" alt="Card image" style="width: 100%;height: 190px;border: 3px white solid;"></a> 
+                        <div class="card-body">
+                            <h4 class="card-title">Viking 55 Convertible </h4>
+                            <p class="card-text">2.500 $</p>
+                            <a href="#" class="btn btn-info">View Infomation</a> <a href="#" class="btn btn-info">Download</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-3">
+                    <div class="card" style="width:300px">
+                            <a href="#"><img class="card-img-top" src="fish3.jfif" alt="Card image" style="width: 100%;height: 190px;border: 3px white solid;"></a> 
+                        <div class="card-body">
+                            <h4 class="card-title">Jarrett Bay 46′ Grander</h4>
+                            <p class="card-text">1.800 $</p>
+                            <a href="#" class="btn btn-info">View Infomation</a> <a href="#" class="btn btn-info ">Download</a>
+                        </div>
+                     </div>
+                </div>
+
+                <div class="col-sm-3">
+                    <div class="card" style="width:300px">
+                            <a href="#"><img class="card-img-top" src="fish8.jfif" alt="Card image" style="width: 100%;height: 190px;border: 3px white solid;"></a> 
+                        <div class="card-body">
+                            <h4 class="card-title">Legend 20 XTR Troller</h4>
+                            <p class="card-text">1.500 $</p>
+                            <a href="#" class="btn btn-info">View Infomation</a> <a href="#" class="btn btn-info">Download</a>
+                        </div>
+                    </div>
+              </div>
+
+            </div>
+            <!--END Line1-->
+
+            <!--Line2-->
+            <div class="row mt-sm-3">
+
+                <div class="col-sm-3">
+                    <div class="card" style="width:300px">
+                              <a href="#"><img class="card-img-top" src="fish4.jfif" alt="Card image" style="width: 100%;height: 190px;border: 3px white solid;"></a> 
+                        <div class="card-body">
+                              <h4 class="card-title">Spencer 70 IPS</h4>
+                              <p class="card-text">2.300 $</p>
+                              <a href="" class="btn btn-info">View Infomation</a> <a href="#" class="btn btn-info ">Download</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-3">
+                    <div class="card" style="width:300px">
+                             <a href="#"><img class="card-img-top" src="fish5.jpg" alt="Card image" style="width: 100%;height: 190px;border: 3px white solid;"></a> 
+                        <div class="card-body">
+                             <h4 class="card-title">Tiara 4300 Open</h4>
+                             <p class="card-text">2.500 $</p>
+                             <a href="#" class="btn btn-info">View Infomation</a> <a href="#" class="btn btn-info">Download</a>
+                         </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-3">
+                    <div class="card" style="width:300px">
+                            <a href="#"><img class="card-img-top" src="fish6.jpg" alt="Card image" style="width: 100%;height: 190px;border: 3px white solid;"></a> 
+                        <div class="card-body">
+                            <h4 class="card-title">PURSUIT C 310</h4>
+                            <p class="card-text">1.500 $</p>
+                            <a href="#" class="btn btn-info">View Infomation</a> <a href="#" class="btn btn-info ">Download</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-3">
+                    <div class="card" style="width:300px">
+                          <a href="#"><img class="card-img-top" src="fish7.jfif" alt="Card image" style="width: 100%;height: 190px;border: 3px white solid;"></a> 
+                       <div class="card-body">
+                          <h4 class="card-title"> MAXUM 1800MX</h4>
+                          <p class="card-text">2.000 $</p>
+                          <a href="#" class="btn btn-info">View Infomation</a> <a href="#" class="btn btn-info ">Download</a>
+                       </div>
+                    </div>
+              </div>
+
+            </div>
+            <!--END line2-->
+         </div>
+         <!--End card FISH-->
+
+
+     </div>
+ <!--end tab content-->
+
+
+
+
+</div>
+    
+
+
+</body>
+</html>

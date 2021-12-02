@@ -1,0 +1,628 @@
+Start Style Global
+body { font-family: 'Saira', sans-serif }
+
+.loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #222;
+    z-index: 9999;
+    color: #FFF
+}
+
+.spinner {
+    width: 60px;
+    height: 60px;
+    background-color: #2EA1C7;
+    margin: 300px auto;
+    -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
+    animation: sk-rotateplane 1.2s infinite ease-in-out;
+    z-index: 99999;
+}
+
+@-webkit-keyframes sk-rotateplane {
+    0% { -webkit-transform: perspective(120px) }
+    50% { -webkit-transform: perspective(120px) rotateY(180deg) }
+    100% { -webkit-transform: perspective(120px) rotateY(180deg)  rotateX(180deg) }
+}
+
+@keyframes sk-rotateplane {
+    0% {
+        transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+        -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg)
+    } 50% {
+          transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+          -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg)
+      } 100% {
+            transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+            -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+        }
+}
+
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .8);
+    color: #FFF !important
+}
+
+.over {
+    position: absolute;
+    top: 0!important;
+    left: 5px!important;
+    width: 97%!important;
+    height: 97%!important;
+    opacity: 0;
+    border-radius: 5px;
+    background: rgba(46, 161, 199, .8);
+    color: #000000;
+    vertical-align: middle;
+    -webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    -o-transition: opacity 1s;
+    transition: opacity 1s;
+    padding: 30px;
+}
+
+.gallery .image--basic:hover .over {
+    opacity: 1;
+    transform: rotateX(360deg)!important;
+}
+
+.double {
+    border-bottom: 4px double #2c964c;
+    border-radius: 25px;
+    width: 300px;
+    padding: 10px;
+    margin: -10px auto 80px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    text-align: center
+}
+
+.top .fa {
+    position: fixed;
+    right:10px;
+    bottom: 20px;
+    background-color: #2EA1C7;
+    color: #FFF;
+    border: 1px solid #2EA1C7;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    cursor: pointer;
+    display: none
+}
+
+.top .fa:hover { background-color: #444444; border-color: #444444 }
+
+.bar-progress {
+    border: 1px solid #2EA1C7;
+    background-color: #2EA1C7;
+    color: #FFF;
+    border-radius: 3px;
+    position: absolute;
+    top: 3px;
+    left: 86%;
+    font-size: 11px;
+    width: 35px;
+    height: 18px;
+    text-align: center
+}
+
+.bar-progress::after {
+    content: '';
+    border-width: 7px;
+    border-color: #2EA1C7 transparent transparent transparent;
+    border-style: solid;
+    position: absolute;
+    top: 17px;
+    left: 32%;
+}
+/* End Style Global */
+
+/* Start Style Bar
+.bar {
+    background-color: #08526d;
+    color: #FFF;
+    padding: 8px;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+ End Style Bar */
+
+
+/* Start Style NavBar */
+/* navbar */
+.navbar { padding: .2rem 1rem!important }
+/*Brand Name*/
+.navbar .navbar-brand > span { color: #2EA1C7 }
+
+/*link*/
+.navbar .navbar-nav .nav-item .nav-link { color: #FFF!important }
+
+.navbar .navbar-nav .nav-item.active .nav-link, .navbar .navbar-nav .nav-item:hover .nav-link { color: #2EA1C7!important }
+/* End Style NavBar */
+
+/* Start Style Carousel */
+.slider .carousel .carousel-indicators li {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #FFF;
+    border: 1px solid #FFF;
+    cursor: pointer
+}
+
+.main-p { color: #2EA1C7 }
+
+.slider .carousel .video-inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+   }
+.slider .carousel .carousel-indicators li.active,
+.slider .carousel .carousel-indicators li:hover {
+    background-color: #2EA1C7;
+    border-color: #2EA1C7;
+}
+
+    
+
+/* .slider .carousel  .carousel-inner .carousel-item:first-of-type {
+    background: url("https://images.pexels.com/photos/33545/sunrise-phu-quoc-island-ocean.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940") no-repeat center center fixed;
+    background-size: cover;
+}
+
+.slider .carousel  .carousel-inner .carousel-item:nth-of-type(2) {
+    background: url("https://images.pexels.com/photos/3009066/pexels-photo-3009066.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500") no-repeat center center fixed;
+    background-size: cover;
+}
+
+.slider .carousel  .carousel-inner .carousel-item:last-of-type {
+    background: url("https://images.pexels.com/photos/756237/pexels-photo-756237.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500") no-repeat center center fixed;
+    background-size: cover;
+} 
+
+.slider .carousel  .carousel-inner .carousel-item .carousel-caption {
+    right: 30%;
+    left: 5%;
+}
+.slider .carousel  .carousel-inner .carousel-item .carousel-caption p {
+    font-size: 18px;
+    letter-spacing: 2px;
+    line-height: 1.8;
+    text-align: justify !important;
+}
+
+.slider .carousel  .carousel-inner .carousel-item .carousel-caption .btn-info {
+    background: none;
+    -webkit-appearance: none;
+    letter-spacing: 2px;
+    transition: all .3s ease-in-out;
+}
+
+.slider .carousel  .carousel-inner .carousel-item .carousel-caption .btn-info:hover {
+    background-color: #2EA1C7;
+}*/
+/* End Style Carousel */
+
+/* Start Style About */
+.about { padding: 80px 0; overflow: hidden }
+
+.about #accordion .card { border: none }
+
+.about #accordion .card .card-header {
+    text-align: left;
+    border: none ;
+    border-bottom: 1px solid #BBB;
+    background: none;
+    -webkit-appearance: none;
+    padding: .3rem .2rem
+}
+
+.about #accordion .card .btn-link {
+    color: #000;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all .3s ease-in-out
+}
+
+.about #accordion .card .btn { padding-left: 0; letter-spacing: 1px }
+
+.about #accordion .card .btn-link:hover { color: #2EA1C7 }
+
+.about #accordion .card .btn-link .fa { color: #2EA1C7!important; font-size: 20px; margin-right: 3px }
+
+.about #accordion .card .card-body p { text-align: justify; line-height: 1.8; text-transform: capitalize }
+
+.about #mySlider2 .overlay { background-color: rgba(0, 0, 0, .5) }
+
+.about #mySlider2 .carousel-indicators { bottom: -50px }
+
+.about #mySlider2 .carousel-indicators li {
+    width: 12px;
+    height: 12px;
+    background-color: #444444;
+    border: 1px solid #444444;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    margin-right: 5px
+}
+
+.about #mySlider2 .carousel-indicators li:hover,
+.about #mySlider2 .carousel-indicators li.active { background-color: #2EA1C7; border-color: #2EA1C7 }
+
+.about #mySlider2 .carousel-inner .carousel-item {
+    height: 400px !important;
+}
+
+.about #mySlider2 .carousel-inner .carousel-item img {
+    height: 400px !important;
+    background-size: cover
+}
+/* End Style About */
+
+/* Start Style gallery */
+.gallery { padding: 80px 0 }
+
+
+.gallery .list-unstyled li {
+    border: 1px solid #2EA1C7;
+    border-radius: 5px;
+    text-align: center;
+    padding: 2px 0;
+    margin-left: 5px;
+    cursor: pointer;
+    transition: all .3s ease-in-out
+}
+
+.gallery .list-unstyled li:hover,
+.gallery .list-unstyled li.active {
+    border: 1px solid #2EA1C7;
+    background-color: #2EA1C7;
+    color: #FFF
+}
+
+.gallery .row { margin: 0!important }
+
+.gallery .row .col-lg-3 { padding: 0!important }
+
+.gallery .row .col-lg-3 img  {
+    padding: 0 5px !important;
+    border-radius: 10px;
+    background-size: cover;
+    width: 100%;
+    margin: 0 auto !important;
+    transition: all .5s ease-in-out;
+}
+
+
+.gallery .container-fluid .image--basic  .over .fa {
+    border: 2px solid #FFF;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 25px;
+    color: #FFF;
+    margin: 60px auto 30px;
+    display: block
+}
+
+.gallery .container-fluid .over p {
+    font-size: 20px;
+    font-weight: bold;
+    color: #FFF;
+    letter-spacing: 1px
+}
+
+.basic__img { display: block; max-width: 100% }
+
+.image__cell.is-collapsed .arrow--up {
+    display: block;
+    height: 10px!important;
+    width: 100%!important;
+
+}
+
+.image--large { max-width: 100%; display: block; padding: 20px; cursor:pointer; margin: 0 auto }
+
+.image__cell.is-expanded .arrow--up {
+    display: block;
+    border-bottom: 8px solid #262626;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    height: 0;
+    width: 0;
+    margin: 2px auto 0;
+}
+
+
+.image__cell.is-expanded .image--expand { max-height: 500px; margin-bottom: 10px }
+
+.image--expand {
+    position: relative;
+    padding: 0 5px;
+    overflow: hidden;
+    background: #262626;
+    max-height: 0;
+    transition: all .3s ease-in-out;
+    width: 407%;
+    border-radius: 5px;
+    margin-left: -13px ;
+    z-index: 1
+}
+
+.image--expand .image--large { width: 400px; height: 400px; background-size: cover; border-radius: 20px }
+
+ .row .col-sm-6:nth-child(2) .image--expand,
+ .row .col-sm-6:nth-child(6) .image--expand,
+ .row .col-sm-6:nth-child(10) .image--expand{
+    margin-left: -342px
+}
+
+ .row .col-sm-6:nth-child(3) .image--expand,
+.row .col-sm-6:nth-child(7) .image--expand,
+ .row .col-sm-6:nth-child(11) .image--expand{
+    margin-left: -672px
+}
+
+ .row .col-sm-6:nth-child(4) .image--expand,
+ .row .col-sm-6:nth-child(8) .image--expand,
+ .row .col-sm-6:nth-child(12) .image--expand{
+     margin-left: -1000px ;
+     width: 406%
+}
+
+.expand__close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: #454545;
+    font-size: 50px;
+    line-height: 50px;
+    text-decoration: none;
+    z-index: 2
+}
+
+.expand__close:before {
+    content: '×';
+}
+
+.expand__close:hover { color: #fff; text-decoration: none }
+
+.image--expand .info { padding: 70px 80px 50px 0 }
+.image--expand .info p {
+    text-align: justify;
+    text-transform: capitalize;
+    line-height: 2
+}
+
+.image--expand .info .bg-danger {
+    background-color: #F2F2F2!important;
+    color: #2EA1C7;
+    border-color: #F2F2F2;
+    transition: all .3s ease-in-out
+}
+
+.image--expand .info .bg-danger:hover { background-color: #2EA1C7!important; border-color: #2EA1C7; color: #222222 }
+/* End Style gallery */
+
+/* Start  Style Subscribe */
+.subscribe {
+    background: url("https://www.motorbiscuit.com/wp-content/uploads/2020/10/Sailboats-at-sunrise-RESIZED-1024x770.jpg") no-repeat center center fixed;
+    background-size: cover;
+    height: 300px;
+    position: relative;
+}
+
+.subscribe .overlay { padding: 70px 0 50px; background-color: rgba(0, 0, 0, .7) }
+
+.subscribe .overlay .double { width: 400px; margin-bottom: 60px  }
+
+.subscribe .btn-info { background-color: #2EA1C7; border-color: #2EA1C7 }
+/* End Style Subscribe */
+
+
+
+/* Start Style Team */
+.team {
+    padding: 80px 0;
+    background-color: #F2F2F2;
+    overflow: hidden
+}
+
+.team .double { margin: -10px auto 130px }
+
+.team .card {
+    box-shadow: 0 8px 15px rgba(0, 0, 0, .25);
+    position: relative;
+    top: 5px;
+    transition: all .5s ease-in-out;
+    border-radius: 20px;
+    cursor: pointer
+}
+
+.team .card:hover { top: -5px; box-shadow: 0 16px 20px rgba(0, 0, 0, .45) }
+
+.team .card img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px !important;
+    margin: -76px auto 0;
+    border: 13px solid #F2F2F2;
+    background-size: cover
+}
+
+.team .card .card-body h5 { font-weight: bold; color: #2EA1C7 }
+
+.team .card .card-body p {
+    text-align: justify;
+    text-transform: capitalize;
+    font-size: 14px;
+    line-height: 2;
+    color: #888
+}
+
+.team .card .card-body .social-media .fa {
+    width: 34px;
+    height: 34px;
+    line-height: 34px;
+    font-size: 18px;
+    background-color: #333;
+    color: #FFF;
+    border: 1px solid #333;
+    border-radius: 50%;
+    margin-left: 5px;
+    display: inline-block;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.team .card .card-body .social-media .fa:hover { background-color: #2EA1C7 ; border-color: #2EA1C7 }
+
+.team .card:hover .card-body .social-media .fa { background-color: #2EA1C7 ; border-color: #2EA1C7 }
+/* End Style Team */
+
+/* Start Style Contact */
+.contact { padding: 80px 0 0; background-color: #F9F9F9; overflow: hidden }
+/* End Style Contact */
+
+/* Start Style Footer */
+footer { padding: 15px; background-color: #F2F2F2; color: #2EA1C7 }
+/* End Style Footer */
+
+/* .gallery main{
+    
+} */
+
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    /* Start Section About */
+    .about  { padding: 75px 0  }
+
+    .about .double { width: 200px; font-size: 25px; margin-bottom: 40px  }
+
+    .about .card .card-header .btn { font-size: 16px!important  }
+
+    .about .card .card-body p { font-size: 13px!important; line-height: 2  }
+    /* End Section About */
+
+    /* Start Section gallery */
+    .gallery { padding: 75px 0 }
+
+    .gallery .double { width: 230px; font-size: 25px; margin-bottom: 40px }
+
+    .gallery .list-unstyled li { padding: 5px 0; margin-bottom: 1px }
+
+    .gallery .row .col-lg-3 img { margin-bottom: 10px!important }
+    /* End Section gallery */
+
+    /* Start  Style Subscribe */
+    .subscribe .overlay { padding: 75px 0 15px  }
+
+    .subscribe .overlay .double { width: 250px; font-size: 20px; margin-bottom: 35px  }
+
+    .subscribe .btn-info { margin: 13px auto; display: block }
+    /* End  Style Subscribe */
+
+    
+    /* Start Style Team */
+    .team { padding: 75px 0 0 }
+
+    .team .double { width: 230px; font-size: 25px   }
+
+    .team .row .card { margin-bottom: 110px  }
+    /* End Style Team */
+
+    
+
+    
+
+    /* Start Style Contact */
+    .contact { padding: 75px 0 0; background-color: #F9F9F9 }
+
+    .contact .double { width: 230px; font-size: 20px; margin-bottom: 40px }
+    /* End Style Contact */
+
+    /* End Style Contact */
+    footer { font-size: 9px }
+    /* End Style Contact */
+}
+
+
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    
+    /* Start Section gallery */
+    .gallery .row .col-lg-3 img {
+        margin-bottom: 10px!important;
+    }
+    /* End Section gallery */
+
+    /* Start Section gallery */
+    .team .card { margin-bottom: 115px !important }
+    /* End Section gallery */
+
+    
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {  }
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

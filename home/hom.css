@@ -1,0 +1,306 @@
+Start Style Global
+body { font-family: 'Saira', sans-serif }
+
+.loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #222;
+    z-index: 9999;
+    color: #FFF
+}
+
+.spinner {
+    width: 60px;
+    height: 60px;
+    background-color: #2EA1C7;
+    margin: 300px auto;
+    -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
+    animation: sk-rotateplane 1.2s infinite ease-in-out;
+    z-index: 99999;
+}
+
+@-webkit-keyframes sk-rotateplane {
+    0% { -webkit-transform: perspective(120px) }
+    50% { -webkit-transform: perspective(120px) rotateY(180deg) }
+    100% { -webkit-transform: perspective(120px) rotateY(180deg)  rotateX(180deg) }
+}
+
+@keyframes sk-rotateplane {
+    0% {
+        transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+        -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg)
+    } 50% {
+          transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+          -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg)
+      } 100% {
+            transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+            -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+        }
+}
+
+.double {
+    border-bottom: 4px double #2c964c;
+    border-radius: 25px;
+    width: 300px;
+    padding: 10px;
+    margin: -10px auto 80px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    text-align: center
+}
+
+.top .fa {
+    position: fixed;
+    right:10px;
+    bottom: 20px;
+    background-color: #2EA1C7;
+    color: #FFF;
+    border: 1px solid #2EA1C7;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    cursor: pointer;
+    display: none
+}
+
+.top .fa:hover { background-color: #444444; border-color: #444444 }
+
+
+/* End Style Global */
+
+/* Start Style Bar
+.bar {
+    background-color: #08526d;
+    color: #FFF;
+    padding: 8px;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+ End Style Bar */
+
+
+/* Start Style NavBar */
+/* navbar */
+.navbar { padding: .2rem 1rem!important }
+/*Brand Name*/
+.navbar .navbar-brand > span { color: #2EA1C7 }
+
+/*link*/
+.navbar .navbar-nav .nav-item .nav-link { color: #FFF!important }
+
+.navbar .navbar-nav .nav-item.active .nav-link, .navbar .navbar-nav .nav-item:hover .nav-link { color: #2EA1C7!important }
+/* End Style NavBar */
+
+/* Start Style Carousel */
+
+.slider .carousel .video-inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+   }
+
+/* Start Style gallery */
+.gallery { padding: 80px 0 }
+
+.card:hover{
+    background-image: linear-gradient(-135deg,rgb(28, 202, 255),rgba(255, 154, 40, 0.637));  
+  }
+  .card-text{
+   color: red;
+   font-weight: bold;
+ }
+  .card-title{
+   color:#296e6e;
+ }
+ .carousel-inner img {
+   width: 100%;
+   height: 100%;
+ }
+/* End Style gallery */
+
+/* Start  Style Subscribe */
+.subscribe {
+    background: url("https://www.motorbiscuit.com/wp-content/uploads/2020/10/Sailboats-at-sunrise-RESIZED-1024x770.jpg") no-repeat center center fixed;
+    background-size: cover;
+    height: 300px;
+    position: relative;
+}
+/* End Style Subscribe */
+
+
+
+/* Start Style Team */
+.team {
+    padding: 80px 0;
+    background-color: #F2F2F2;
+    overflow: hidden
+}
+/* End Style Team */
+
+
+/* Start Style Footer */
+footer { padding: 15px; background-color: #F2F2F2; color: #2EA1C7 }
+/* End Style Footer */
+ footer{
+    width: 100%;
+  
+    bottom: 0;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.555), rgba(0, 0, 0, 0.178));
+    color: #fff;
+    padding: 100px 0 20px;
+    font-size: 13px;
+    line-height: 20px;
+}
+
+footer .row{
+
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+footer .col{
+    flex-basis: 25%;
+    padding: 10px;
+}
+
+footer .col:nth-child(1), .col:nth-child(2), .col:nth-child(3){
+    flex-basis: 25%;
+}
+
+footer .col h2{
+    width: fit-content;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.email-id{
+    width: fit-content;
+    border-bottom: 1px solid #ccc;
+    margin: 20px 0;
+}
+
+footer ul li{
+    list-style: none;
+    margin-bottom: 12px;
+}
+
+footer ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+form{
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 50px;
+}
+
+form .far{
+    font-size: 20px;
+    margin-right: 15px;
+}
+
+form input{
+    width: 100%;
+    background: transparent;
+    color: #ccc;
+    border: 0;
+    outline: none;
+}
+
+form button{
+    background: transparent;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+
+form button .fas{
+    font-size: 20px;
+    color: #ccc;
+}
+
+.social-icons .fab {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 30px;
+    background: #fff;
+    color: #000;   
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+hr{
+    width: 90%;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    margin: 20px auto;
+}
+
+.copyright{
+    text-align: center;
+}
+
+.underline{
+    width: 100%;
+    height: 5px;
+    background: #767676;
+    border-radius: 3px;
+    position: absolute;
+    top: 25px;
+    left: 0;
+    overflow: hidden;
+}
+
+.underline span{
+    width: 15px;
+    height: 100%;
+    background: white;
+    border-radius: 3px;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    animation: moving 2s linear infinite;
+}
+
+@keyframes moving{
+    0%{
+        left: -20px;
+    }
+    100%{
+        left: 100%;
+    }
+}
+
+@media (max-width: 700px){
+    footer{
+        bottom: unset;
+    }
+    .col{
+        flex-basis: 25%;
+        padding: 50px;
+    }
+    
+    .col:nth-child(1), .col:nth-child(2), .col:nth-child(3){
+        flex-basis: 100%;
+    }
+} 

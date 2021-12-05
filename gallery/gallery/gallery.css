@@ -1,0 +1,168 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body 
+  {
+    background-image: url(../Image/back1.jpg);
+    background-repeat: repeat-y;
+    background-size: 100%;
+    padding: 20px;
+    font-family: Arial;
+  }
+  
+  .main 
+  {
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 5%;
+  } 
+  
+  h1 
+  {
+    font-size: 50px;
+    word-break: break-all;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .row 
+  {
+    margin: 10px -20px;
+  }
+  
+  .row,
+  .row > .column 
+  {
+    padding: 8px;
+  }
+  
+  .column 
+  {
+    float: left;
+    width: 33.33%;
+    display: none;
+  }
+  
+  .row:after 
+  {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  .content 
+  {
+    background-color: white;
+    padding: 10px;
+  }
+  
+  .show 
+  {
+    display: block;
+  }
+  
+  .cat .btn
+  {
+    border: none;
+    outline: none;
+    padding: 15px 16px;
+    background-color: white;
+    cursor: pointer;
+    width: 100px;
+  }
+  
+  .cat .btn:hover 
+  {
+    background-color: #ddd;
+  }
+  
+  .cat .btn.active 
+  {
+    background-color: #666;
+    color: white;
+  }
+
+
+  
+  .zoom 
+  {
+  transition: transform .5s;
+  width: 300px;
+  height: 260px;
+  margin: 0 auto;
+}
+
+.zoom:hover 
+{
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.2); 
+}
+
+.boatImage{
+    width: 250px;
+    height: 250px;
+    padding: 10px;
+    border: solid gray medium;
+
+}
+
+.detailImage{
+    margin-top:20px;
+    margin-bottom: 70px;
+}
+
+.row .btn{
+  width: 100%;
+}
+
+
+img{
+  width: 150px;
+  height: 80px;
+}
+
+.navbar{
+  text-transform: uppercase;
+  font-weight: 700;   
+  font-size: .9rem;
+  letter-spacing: .1rem;
+  background: rgba(0,0,0,.6)!important
+}
+
+.navbar img{
+  height: 3rem;
+}
+
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover{
+  color: #1ebba3
+}
+
+
+nav ul li {
+  padding-left: 15px;
+}
+
+.carousel-caption{
+  position: absolute;
+  left: 50%;
+  bottom: 8%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+}
+.sub-menu{
+  display: none;
+}
+
+#navbarResponsive ul li:hover .sub-menu ul{
+  display: block;
+  position: absolute;
+  color: #1ebba3;
+}
+
+.modal-header h2{
+  margin-left: 47%
+}
+

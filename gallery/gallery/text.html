@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GALLERY</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="gallery.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+    <a class="navbar-brand" href="home.html"><img src="../Marina Fleet-logos/Logo.png" alt=""></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="home.html"><i class="bi bi-house-fill"></i>Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#About"><i class="bi bi-people"></i>About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../Gallery/gallery.html"><i class="bi bi-collection-fill"></i>Gallery</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><i class="bi bi-telephone-fill"></i>Contact Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="sign_in.html"><i class="bi bi-person-fill"></i>Sign in</a>
+        </li>
+        <li class="nav-item">
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#cart">Cart (<span class="total-count"></span>)</button>
+        </li>
+      </ul>
+    </div>  
+  </nav>
+
+    <div class="main">
+        <h1>GALLERY</h1>
+        <hr>
+
+        <div id="myBtnContainer" class="cat">
+          <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+          <button class="btn" onclick="filterSelection('people')"> Fishing</button>
+          <button class="btn" onclick="filterSelection('cars')"> Sailing</button>
+          <button class="btn" onclick="filterSelection('nature')"> Luxury</button>
+          
+         
+        </div>
+        
+        <div class="row">
+          <div class="column nature">
+            <div class="detailImage">
+                <div class="zoom">
+                    <div class="content">
+                        <a href="product1.html"> <img src="../Image/lux1.jpg" alt="Luxury"  style="width:280px;height: 190px;"class="boatImage"> </a> 
+                        <h4>Supperyacht A</h4>
+                        <h5>Price: 1500$</h5>
+                        <a href="#" data-name="Supperyacht A - Luxury" data-price="1500" class="add-to-cart btn btn-primary">Add to cart</a>
+                    </div>  
+                </div>
+            </div>
+          </div>
+
+          <div class="column nature">
+            <div class="detailImage">
+            <div class="zoom">
+              <div class="content">
+               <a href=""> <img src="../Image/lux2.jpg" alt="Luxury"  style="width:280px;height: 190px;"class="boatImage"> </a> 
+                <h4>Scarlet Pearl</h4>
+                <h5>Price: 1450$</h5>
+                <a href="#" data-name="Scarlet Pearl - Luxury" data-price="1450" class="add-to-cart btn btn-primary">Add to cart</a>
+              </div>  
+            </div>
+          </div>
+        </div>
+          <div class="column nature">
+            <div class="detailImage">
+            <div class="zoom">
+              <div class="content">
+               <a href=""> <img src="../Image/lux3.jpeg" alt="Luxury"  style="width:280px;height: 190px;"class="boatImage"> </a> 
+                <h4>Panakeia</h4>
+                <h5>Price: 1560$</h5>
+                <a href="#" data-name="Panakeia - Luxury" data-price="1560" class="add-to-cart btn btn-primary">Add to cart</a>
+              </div>  
+            </div>
+          </div>
+        </div>
+          <div class="column nature">
+            <div class="detailImage">
+            <div class="zoom">
+              <div class="content">
+               <a href=""> <img src="../Image/lux4.jpg" alt="Luxury"  style="width:280px;height: 190px;"class="boatImage"> </a> 
+                <h4>Eclipse</h4>
+                <h5>Price: 1380$</h5>
+                <a href="#" data-name="Eclipse - Luxury" data-price="1380" class="add-to-cart btn btn-primary">Add to cart</a>
+              </div>  
+            </div>
+          </div>
+        </div>
+          <div class="column nature">
+            <div class="detailImage">
+            <div class="zoom">
+              <div class="content">
+               <a href=""> <img src="../Image/lux5.jpg" alt="Luxury"  style="width:280px;height: 190px;"class="boatImage"> </a> 
+                <h4>Azzam</h4>
+                <h5>Price: 1400$</h5>
+                <a href="#" data-name="Azzam - Luxury" data-price="1400" class="add-to-cart btn btn-primary">Add to cart</a>
+              </div>  
+            </div>
+          </div>
+        </div>
+          <div class="column nature">
+            <div class="detailImage">
+            <div class="zoom">
+              <div class="content">
+               <a href=""> <img src="../Image/lux6.jpg" alt="Luxury"  style="width:280px;height: 190px;"class="boatImage"> </a> 
+                <h4>Margaret</h4>
+                <h5>Price: 1650$</h5>
+                <a href="#" data-name="Margaret - Luxury" data-price="1650" class="add-to-cart btn btn-primary">Add to cart</a>
+              </div>  
+            </div>
+          </div>
+        </div>
+         <!--   -->
+          
+          <div class="column cars">
+            <div class="detailImage">
+            <div class="zoom">  
+              <div class="content">
+               <a href="">  <img src="../Image/sail1.jpg" alt="Sailing" style="width:280px;height: 190px;"class="boatImage"></a>
+                <h4>Maltese Falcom</h4>
+                <h5>Price: 1240$</h5>
+                <a href="#" data-name="Maltese Falcom - Sailing" data-price="1240" class="add-to-cart btn btn-primary">Add to cart</a>
+              </div>
+            </div>
+          </div>
+        </div>
+          <div class="column cars">
+            <div class="detailImage">
+            <div class="zoom">  
+              <div class="content">
+               <a href="">  <img src="../Image/sail2.jpg" alt="Sailing" style="width:280px;height: 190px;"class="boatImage"></a>
+                <h4>Black Pearl</h4>
+                <h5>Price: 1300$</h5>
+                <a href="#" data-name="Black Pearl - Sailing" data-price="1300" class="add-to-cart btn btn-primary">Add to cart</a>
+              </div>
+            </div>
+          </div>
+        </div>
+          <div class="column cars">
+            <div class="detailImage">
+            <div class="zoom">  
+              <div class="content">
+               <a href="">  <img src="../Image/sail3.jpg" alt="Sailing" style="width:280px;height: 190px;"class="boatImage"></a>
+                <h4>SignatureCruise Halong</h4>
+                <h5>Price: 1250$</h5>
+                <a href="#" data-name="SignatureCruise Halong - Sailing" data-price="1250" class="add-to-cart btn btn-primary">Add to cart</a>
+              </div>
+            </div>
+          </div>
+        </div>
+          <div class="column cars">
+            <div class="detailImage">
+            <div class="zoom">  
+              <div class="content">
+               <a href="">  <img src="../Image/sail4.jpg" alt="Sailing" style="width:280px;height: 190px;"class="boatImage"></a>
+                <h4>Sailing Yacht A</h4>
+                <h5>Price: 1390$</h5>
+                <a href="#" data-name="Sailing Yacht A - Sailing" data-price="1390" class="add-to-cart btn btn-primary">Add to cart</a>
+              </div>
+            </div>
+          </div>
+        </div>
+          <div class="column cars">
+            <div class="detailImage">
+            <div class="zoom">  
+              <div class="content">
+               <a href="">  <img src="../Image/sail5.jpg" alt="Sailing" style="width:280px;height: 190px;"class="boatImage"></a>
+                <h4>Golden Horizon</h4>
+                <h5>Price: 1250$</h5>
+                <a href="#" data-name="Golden Horizon - Sailing" data-price="1250" class="add-to-cart btn btn-primary">Add to cart</a>
+              </div>
+            </div>
+          </div>
+        </div>
+          <div class="column cars">
+            <div class="detailImage">
+            <div class="zoom">  
+              <div class="content">
+               <a href="">  <img src="../Image/sail6.jpg" alt="Sailing" style="width:280px;height: 190px;"class="boatImage"></a>
+                <h4>Paradise Luxury</h4>
+                <h5>Price: 1300$</h5>
+                <a href="#" data-name="Paradise Luxury - Sailing" data-price="1300" class="add-to-cart btn btn-primary">Add to cart</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--    -->
+          <div class="column people">
+            <div class="detailImage">
+            <div class="zoom">  
+              <div class="content">
+               <a href="">  <img src="../Image/fish1.jpg" alt="Fishing" style="width:280px;height: 190px;"class="boatImage"></a>
+                <h4>Merry Fisher 795</h4>
+                <h5>Price: 950$</h5>
+                <a href="#" data-name="Merry Fisher 795 - Fishing" data-price="950" class="add-to-cart btn btn-primary">Add to cart</a>
+              </div>
+            </div>
+          </div>
+        </div>
+          <div class="column people">
+            <div class="detailImage">
+            <div class="zoom">  
+              <div class="content">
+               <a href="">  <img src="../Image/fish2.jfif" alt="Fishing" style="width:280px;height: 190px;"class="boatImage"></a>
+                <h4>Viking 55 Convertible</h4>
+                <h5>Price: 1000$</h5>
+                <a href="#" data-name="Viking 55 Convertible - Fishing" data-price="1000" class="add-to-cart btn btn-primary">Add to cart</a>
+              </div>
+            </div>
+          </div>
+        </div>
+          <div class="column people">
+            <div class="detailImage">
+            <div class="zoom">  
+              <div class="content">
+               <a href="">  <img src="../Image/fish3.jfif" alt="Fishing" style="width:280px;height: 190px;"class="boatImage"></a>
+                <h4>Jarrett Bay 46′ Grander</h4>
+                <h5>Price: 700$</h5>
+                <a href="#" data-name="Jarrett Bay 46′ Grander - Fishing" data-price="700" class="add-to-cart btn btn-primary">Add to cart</a>
+              </div>
+            </div>
+            </div>
+            </div>
+          <div class="column people">
+            <div class="detailImage">
+            <div class="zoom">  
+              <div class="content">
+               <a href="">  <img src="../Image/fish4.jpg" alt="Fishing" style="width:280px;height: 190px;"class="boatImage"></a>
+                <h4>Spencer 70 IPS</h4>
+                <h5>Price: 500$</h5>
+                <a href="#" data-name="Spencer 70 IPS - Fishing" data-price="500" class="add-to-cart btn btn-primary">Add to cart</a>
+              </div>
+            </div>
+          </div>
+         </div>  
+
+          <div class="column people">
+            <div class="detailImage">
+            <div class="zoom">  
+              <div class="content">
+               <a href="">  <img src="../Image/fish5.jpg" alt="Fishing" style="width:280px;height: 190px;"class="boatImage"></a>
+                <h4>Tiara 4300 Open</h4>
+                <h5>Price: 1000$</h5>
+                <a href="#" data-name="Tiara 4300 Open - Fishing" data-price="1000" class="add-to-cart btn btn-primary">Add to cart</a>
+              </div>
+            </div>
+          </div>
+            </div>
+          <div class="column people">
+            <div class="detailImage">
+            <div class="zoom">  
+              <div class="content">
+               <a href="">  <img src="../Image/fish6.jfif" alt="Fishing" style="width:280px;height: 190px;"class="boatImage"></a>
+                <h4>PURSUIT C 310</h4>
+                <h5>Price: 900$</h5>
+                <a href="#" data-name="PURSUIT C 310 - Fishing" data-price="900" class="add-to-cart btn btn-primary">Add to cart</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+<!--Modal Cart-->
+        <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h2 class="modal-title" id="exampleModalLabel">CART</h2>
+
+                
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <table class="show-cart table">
+                  
+                </table>
+                <div>Total price: $<span class="total-cart"></span></div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button class="clear-cart btn btn-danger">Clear Cart</button>
+                <button type="button" class="btn btn-primary">Order now</button>
+              </div>
+            </div>
+          </div>
+        </div> 
+<!--End modal cart-->
+
+
+        <script>
+        filterSelection("all")
+        function filterSelection(c) 
+        {
+          var x, i;
+          x = document.getElementsByClassName("column");
+          if (c == "all") c = "";
+          for (i = 0; i < x.length; i++) 
+          {
+            w3RemoveClass(x[i], "show");
+            if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+          }
+        }
+        
+        function w3AddClass(element, name) 
+        {
+          var i, arr1, arr2;
+          arr1 = element.className.split(" ");
+          arr2 = name.split(" ");
+          for (i = 0; i < arr2.length; i++) 
+          {
+            if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+          }
+        }
+        
+        function w3RemoveClass(element, name) 
+        {
+          var i, arr1, arr2;
+          arr1 = element.className.split(" ");
+          arr2 = name.split(" ");
+          for (i = 0; i < arr2.length; i++) 
+          {
+            while (arr1.indexOf(arr2[i]) > -1) 
+            {
+              arr1.splice(arr1.indexOf(arr2[i]), 1);     
+            }
+          }
+          element.className = arr1.join(" ");
+        }
+        
+        
+        var btnContainer = document.getElementById("myBtnContainer");
+        var btns = btnContainer.getElementsByClassName("btn");
+        for (var i = 0; i < btns.length; i++) 
+        {
+          btns[i].addEventListener("click", function()
+          {
+            var current = document.getElementsByClassName("active");
+            current[0].className = current[0].className.replace(" active", "");
+            this.className += " active";
+          });
+        }
+        </script>
+        
+       
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="https://kit.fontawesome.com/d15efe8da9.js" crossorigin="anonymous"></script>
+        <script src="gallery.js"></script>
+
+
+      
+</body>
+</html>

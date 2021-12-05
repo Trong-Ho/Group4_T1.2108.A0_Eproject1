@@ -12,16 +12,188 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
     <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
     <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
-    <link rel="stylesheet" href="product.css">
+    <style>
+body 
+{
+  font-family: Arial;
+  margin: 0;
+}
+  
+* {
+  box-sizing: border-box;
+}
+  
+img 
+{
+  vertical-align: middle;
+}
+  
+  
+.mySlides 
+{
+  display: none;
+}
+  
+.cursor 
+{
+    cursor: pointer;
+}
+  
+  
+.caption-container
+{
+  background-color: #222;
+  padding: 1px;
+}
+  
+.row:after 
+{
+  content: "";
+  display: table;
+  clear: both;
+}
+  
+.column
+{
+  float: left;
+  width: 16.66%;
+}
+  
+.demo 
+{
+  opacity: 0.6;
+}
+  
+.active,
+.demo:hover 
+{
+  opacity: 1;
+}
+
+
+* { box-sizing: border-box; }
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+}
+
+.rating {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  overflow: hidden;
+  flex-direction: row-reverse;
+  height: 150px;
+  position: relative;
+}
+
+.rating-0 {
+  filter: grayscale(100%);
+}
+
+.rating > input {
+  display: none;
+}
+
+.rating > label {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  margin-top: auto;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='126.729' height='126.73'%3e%3cpath fill='%23e3e3e3' d='M121.215 44.212l-34.899-3.3c-2.2-.2-4.101-1.6-5-3.7l-12.5-30.3c-2-5-9.101-5-11.101 0l-12.4 30.3c-.8 2.1-2.8 3.5-5 3.7l-34.9 3.3c-5.2.5-7.3 7-3.4 10.5l26.3 23.1c1.7 1.5 2.4 3.7 1.9 5.9l-7.9 32.399c-1.2 5.101 4.3 9.3 8.9 6.601l29.1-17.101c1.9-1.1 4.2-1.1 6.1 0l29.101 17.101c4.6 2.699 10.1-1.4 8.899-6.601l-7.8-32.399c-.5-2.2.2-4.4 1.9-5.9l26.3-23.1c3.8-3.5 1.6-10-3.6-10.5z'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 76%;
+  transition: .3s;
+}
+
+.rating > input:checked ~ label,
+.rating > input:checked ~ label ~ label {
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='126.729' height='126.73'%3e%3cpath fill='%23fcd93a' d='M121.215 44.212l-34.899-3.3c-2.2-.2-4.101-1.6-5-3.7l-12.5-30.3c-2-5-9.101-5-11.101 0l-12.4 30.3c-.8 2.1-2.8 3.5-5 3.7l-34.9 3.3c-5.2.5-7.3 7-3.4 10.5l26.3 23.1c1.7 1.5 2.4 3.7 1.9 5.9l-7.9 32.399c-1.2 5.101 4.3 9.3 8.9 6.601l29.1-17.101c1.9-1.1 4.2-1.1 6.1 0l29.101 17.101c4.6 2.699 10.1-1.4 8.899-6.601l-7.8-32.399c-.5-2.2.2-4.4 1.9-5.9l26.3-23.1c3.8-3.5 1.6-10-3.6-10.5z'/%3e%3c/svg%3e");
+}
+
+
+.rating > input:not(:checked) ~ label:hover,
+.rating > input:not(:checked) ~ label:hover ~ label {
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='126.729' height='126.73'%3e%3cpath fill='%23d8b11e' d='M121.215 44.212l-34.899-3.3c-2.2-.2-4.101-1.6-5-3.7l-12.5-30.3c-2-5-9.101-5-11.101 0l-12.4 30.3c-.8 2.1-2.8 3.5-5 3.7l-34.9 3.3c-5.2.5-7.3 7-3.4 10.5l26.3 23.1c1.7 1.5 2.4 3.7 1.9 5.9l-7.9 32.399c-1.2 5.101 4.3 9.3 8.9 6.601l29.1-17.101c1.9-1.1 4.2-1.1 6.1 0l29.101 17.101c4.6 2.699 10.1-1.4 8.899-6.601l-7.8-32.399c-.5-2.2.2-4.4 1.9-5.9l26.3-23.1c3.8-3.5 1.6-10-3.6-10.5z'/%3e%3c/svg%3e");
+}
+
+.emoji-wrapper {
+  width: 100%;
+  text-align: center;
+  height: 100px;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.emoji-wrapper:before,
+.emoji-wrapper:after{
+  content: "";
+  height: 15px;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  z-index: 1;
+}
+
+.emoji-wrapper:before {
+  top: 0;
+  background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 35%,rgba(255,255,255,0) 100%);
+}
+
+.emoji-wrapper:after{
+  bottom: 0;
+  background: linear-gradient(to top, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 35%,rgba(255,255,255,0) 100%);
+}
+
+.emoji {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: .3s;
+}
+
+.emoji > svg {
+  margin: 15px 0; 
+  width: 70px;
+  height: 70px;
+  flex-shrink: 0;
+}
+
+#rating-1:checked ~ .emoji-wrapper > .emoji { transform: translateY(-100px); }
+#rating-2:checked ~ .emoji-wrapper > .emoji { transform: translateY(-200px); }
+#rating-3:checked ~ .emoji-wrapper > .emoji { transform: translateY(-300px); }
+#rating-4:checked ~ .emoji-wrapper > .emoji { transform: translateY(-400px); }
+#rating-5:checked ~ .emoji-wrapper > .emoji { transform: translateY(-500px); }
+
+.feedback {
+  max-width: 360px;
+  background-color: #fff;
+  width: 100%;
+  padding: 30px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  box-shadow: 0 4px 30px rgba(0,0,0,.05);
+}
+
+    </style>
 </head>
 <body>    
     <div class="container">        
         <div class="row" style="height: 220px;">            
             <div class="col-sm-6" style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
-                <strong style="font-size: 35px; font-weight: bold;">Silverton 43 Sports Bridge</strong>    
+                <strong style="font-size: 35px; font-weight: bold;">Silverton 43 Sports </strong>    
                 <p style="font-size: 20px;">Ho Chi Minh City, Vietnam </p> 
-                Silverton 43 Sports Bridge là chiếc du thuyền vừa được hạ thuỷ vào tháng 3/2021 
-                Dòng cruiser đậm chất Mỹ phù hợp cho những chuyến dã ngoại cùng gia đình với 2 yếu tố đặc trưng: Tốc độ cao và có cabin.
+                Silverton 43 Sports is a yacht that was launched in March 2021. The American cruiser is suitable for family picnics with 2 characteristic elements: High speed and cabin.
             </div>
             <div class="col-sm-6"></div>
         </div>
@@ -33,32 +205,32 @@
                <div class="container" style="text-align: center;">  <!--Photos preview-->
                   <div class="mySlides">
                     <div class="numbertext"></div>
-                    <img src="pro_pic_1.jpg" style="width:100%">
+                    <img src="image pro 1/pic1_1.jpg" style="width:100%">
                   </div>
                 
                   <div class="mySlides">
                     <div class="numbertext"></div>
-                    <img src="pro_pic_2.jpg" style="width:100%">
+                    <img src="image pro 1/pic1_2.jpg" style="width:100%">
                   </div>
                 
                   <div class="mySlides">
                     <div class="numbertext"></div>
-                    <img src="pro_pic_3.jpg" style="width:100%">
+                    <img src="image pro 1/pic1_3.jpg" style="width:100%">
                   </div>
                     
                   <div class="mySlides">
                     <div class="numbertext"></div>
-                    <img src="pro_pic_4.jpg" style="width:100%">
+                    <img src="image pro 1/pic1_4.jpg" style="width:100%">
                   </div>
                 
                   <div class="mySlides">
                     <div class="numbertext"></div>
-                    <img src="pro_pic_5.jpg" style="width:100%">
+                    <img src="image pro 1/pic1_5.jpg" style="width:100%">
                   </div>
                     
                   <div class="mySlides">
                     <div class="numbertext"></div>
-                    <img src="pro_pic_6.jpg" style="width:100%">
+                    <img src="image pro 1/pic1_6.jpg" style="width:100%">
                   </div>
                     
                   
@@ -68,56 +240,54 @@
                 
                   <div class="row">
                     <div class="column">
-                      <img class="demo cursor" src="pro_pic_1.jpg" style="width:100%" onclick="currentSlide(1)" alt="">
+                      <img class="demo cursor" src="image pro 1/pic1_1.jpg" style="width:100%" onclick="currentSlide(1)" alt="">
                     </div>
                     <div class="column">
-                      <img class="demo cursor" src="pro_pic_2.jpg" style="width:100%" onclick="currentSlide(2)" alt="">
+                      <img class="demo cursor" src="image pro 1/pic1_2.jpg" style="width:100%" onclick="currentSlide(2)" alt="">
                     </div>
                     <div class="column">
-                      <img class="demo cursor" src="pro_pic_3.jpg" style="width:100%" onclick="currentSlide(3)" alt="">
+                      <img class="demo cursor" src="image pro 1/pic1_3.jpg" style="width:100%" onclick="currentSlide(3)" alt="">
                     </div>
                     <div class="column">
-                      <img class="demo cursor" src="pro_pic_4.jpg" style="width:100%" onclick="currentSlide(4)" alt="">
+                      <img class="demo cursor" src="image pro 1/pic1_4.jpg" style="width:100%" onclick="currentSlide(4)" alt="">
                     </div>
                     <div class="column">
-                      <img class="demo cursor" src="pro_pic_5.jpg" style="width:100%" onclick="currentSlide(5)" alt="">
+                      <img class="demo cursor" src="image pro 1/pic1_5.jpg" style="width:100%" onclick="currentSlide(5)" alt="">
                     </div>    
                     <div class="column">
-                      <img class="demo cursor" src="pro_pic_6.jpg" style="width:100%" onclick="currentSlide(6)" alt="">
+                      <img class="demo cursor" src="image pro 1/pic1_6.jpg" style="width:100%" onclick="currentSlide(6)" alt="">
                     </div>
                   </div>
                 </div>
                 <hr style="height:2px;border-width:0; width: 70%; color:gray;background-color:gray">
                 
                 <span style="font-size: 19px;">
-                    Trải nghiệm cuộc phiêu lưu tuyệt vời với Silverton 43 Sports Bridge. Chức năng vượt trội kết hợp với sự thoải mái từ trên xuống dưới. 
-                    Với sự linh hoạt không giới hạn của chỗ ngồi trong buồng lái và một salon rộng rãi ở cabin phía trước. 
-                    Tàu được sắp xếp hoàn chỉnh với trung tâm giải trí và sàn bơi cỡ lớn, 
-                    chiếc cruiser táo bạo này sẽ mang đến rất nhiều điều tuyệt vời cho chuyến đi của bạn.
+                  Experience amazing adventures with Silverton 43 Sports. Superior functionality combined with top-to-bottom comfort. With unlimited flexibility of seats in the cockpit and a spacious salon in the front cabin. Complete with a recreation center and a large swimming deck, this daring cruiser will bring a lot of great things to your trip.
                 </span>
                 <hr style="height:2px;border-width:0; width: 70%; color:gray;background-color:gray">
                     <span style="font-family:Verdana, Geneva, Tahoma, sans-serif; font-size: 30px;">
-                        <p style="text-align: center;">CUNG ĐƯỜNG</p>
+                        <p style="text-align: center;">ROAD CHARTER</p>
                     </span>
                 <p style="font-size: 16px; font-family:Verdana, Geneva, Tahoma, sans-serif;">
-                <span style="font-family:Verdana, Geneva, Tahoma, sans-serif; font-size: 20px;">&#187;&#187; Dạo quanh sông Sài Gòn khu trung tâm 2 giờ</span>  <br>
-                1. Ngắm hoàng hôn và thành phố về đêm. <br>
-                2. Tận hưởng sự thoáng đạt và những cơn gió mát. <br>
+                <span style="font-family:Verdana, Geneva, Tahoma, sans-serif; font-size: 20px;">&#187;&#187; Sightseeing on the Saigon River by yacht in 2 hours.</span>  <br>
+                1. Sunset and city night life. <br>
+                2. Enjoy the freedom & fresh air. <br>
                 <br>    
-                <span style="font-family:Verdana, Geneva, Tahoma, sans-serif; font-size: 20px;">&#187;&#187; Sài Gòn – Khu dự trữ sinh quyển Cần Giờ 4 giờ</span>  <br>
-                1. Trải nghiệm cảnh hoang sơ của rừng ngập mặn và cuộc sống của ngư dân địa phương. <br>
-                2. Mua và chế biến hải sản trực tiếp tại các tàu cá giữa rừng.  <br>
-                3. Ngắm hoàng hôn trên sông. <br>
-                4. Ngắm thành phố về đêm. <br> <br>
-                <span style="font-family:Verdana, Geneva, Tahoma, sans-serif; font-size: 20px;">&#187;&#187; Sài Gòn – Vũng Tàu 6 giờ </span>  <br>
-                1. Cung đường xuyên qua rừng ngập mặn Cần Giờ. <br>
-                2. Trải nghiệm cảm giác tắm biển xa bờ. <br>
-                3. Ngắm hoàng hôn trên sông. <br>
-                4. Ngắm thành phố về đêm. <br>
+                <span style="font-family:Verdana, Geneva, Tahoma, sans-serif; font-size: 20px;">&#187;&#187; Saigon – Can Gio Mangrove Forest 4 hours.</span>  <br>
+                1. Enjoy the mangrove forest and the life of local fisherman. <br>
+                2. Buy and cook local seafood from the forest fisherman. The special seafood of brackish water.  <br>
+                3. Sunset on the river <br>
+                4. Night life of the city <br> <br>
+                <span style="font-family:Verdana, Geneva, Tahoma, sans-serif; font-size: 20px;">&#187;&#187;  Saigon – Vung Tau City </span>  <br>
+                1. The trip will go through Can Gio Mangrove Forest. <br>
+                2. Swimming in the open sea (near the coastine) <br>
+                3. Sunset on the river <br>
+                4. Night life of the city <br>
                 </p>                
             </div>
             
-            <div class="col-sm-4"  style="background-color:lightgray"> <!--DESCRIPTION-->
+            <!--DESCRIPTION-->
+            <div class="col-sm-4"  style="background-color:lightgray"> 
                 <p style="text-align: center; font-style: italic; font-weight: bold; font-size: 40px; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">​DESCRIPTION</p>
                 <table style="height: 200px; width: 350px; text-align: center;">
                     <tr>
@@ -151,13 +321,7 @@
                     </p> 
                     5,970,000 đ / 1 hour (Before 15h00) <br>
                     6,690,000 đ / 1 hour (After 15h00)  <hr>
-                    <p style="font-size: 19px; font-weight:bold;">SATURDAY & SUNDAY RENT</p> 
-                    6,450,000 đ / 1 hour (Before 15h00) <br>
-                    7,650,000 đ / 1 hour (After 15h00) <hr>
-                
-                    <p style="font-size: 19px; font-weight:bold;">HOLIDAY RENT</p> 
-                    7.650.000 đ / 1 hour (Before 15h00) <br>
-                    8.850.000 đ / 1 hour (After 15h00) <br><br>
+                    <a href="#" data-name="Supperyacht A - Luxury" data-price="1500" class="add-to-cart btn btn-primary">Add to cart</a>
                     <hr style="height:2px;border-width:0; width: 100%; color:gray;background-color:gray">
                     <p style="font-size: 19px; font-weight:bold;">Rating</p>
                     <div class="container">
@@ -313,7 +477,6 @@
    <br><br><br><br>
 
 
-   <i class="fas fa-ruler-horizontal"></i>
 
 
 
